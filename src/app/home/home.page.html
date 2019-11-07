@@ -1,14 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-button (click)="capturarlnglat()" expand="block">Get Location</ion-button>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Location Info</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        Latitue
+      </ion-label>
+      <ion-badge slot="end">{{lat}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        longitude
+      </ion-label>
+      <ion-badge slot="end">{{lng}}</ion-badge>
+    </ion-item>
+    </ion-list>
